@@ -1,0 +1,33 @@
+{
+  "name": "ucsc-content-blocks",
+  "version": "1.0.0",
+  "description": "Content blocks for UC Santa Cruz",
+  "author": "UCSC",
+  "main": "blocks/build/index.js",
+  "scripts": {
+    "start": "wp-scripts start --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
+    "build": "wp-scripts build --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
+    "start:details": "wp-scripts start --webpack-src-dir=blocks/src/details --output-path=blocks/build/details",
+    "build:details": "wp-scripts build --webpack-src-dir=blocks/src/details --output-path=blocks/build/details",
+    "start:details-wrapper": "wp-scripts start --webpack-src-dir=blocks/src/details-wrapper --output-path=blocks/build/details-wrapper",
+    "build:details-wrapper": "wp-scripts build --webpack-src-dir=blocks/src/details-wrapper --output-path=blocks/build/details-wrapper"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ucsc/ucsc-content-blocks.git"
+  },
+  "keywords": [
+    "wordpress",
+    "blocks",
+    "details"
+  ],
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ucsc/ucsc-content-blocks/issues"
+  },
+  "homepage": "https://github.com/ucsc/ucsc-content-blocks#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.8.0",
+    "standard-version": "^9.5.0"
+  }
+}

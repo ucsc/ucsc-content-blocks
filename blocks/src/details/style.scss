@@ -1,0 +1,49 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-ucsc-details {
+  border-radius: 4px;
+  margin: .5em .5em 0;
+  padding: .5em .5em 0;
+  position:relative;
+	summary {
+		box-sizing: border-box;
+		width: 100%;
+		padding: var(--wp--preset--font-size--small);
+		padding-left: 1.5rem;
+		list-style: none;
+		cursor: pointer;
+		transition: font-weight 0.2s ease-in-out;
+		&::-webkit-details-marker {
+			display:none;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			background: transparent url(arrow.svg) no-repeat 50% 50% / 1em 1em;
+			width: 1.5em;
+			height: 1.5em;
+			transition: transform 0.1s linear;
+		}
+	}
+
+}
+
+.wp-block-ucsc-details[open] summary {
+	&::before {
+		transform: rotate(90deg) scale(1.25);
+	}
+}
+
+.wp-block-ucsc-details {
+
+	&.is-style-plus {
+		summary::before{
+			background: none;
+		}
+	}
+}

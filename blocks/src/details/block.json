@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ucsc/details",
+	"version": "0.1.0",
+	"title": "Details",
+	"category": "text",
+	"icon": "arrow-right-alt2",
+	"description": "Details block",
+	"supports": {
+		"html": false,
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		},
+		"color": {
+			"text": true,
+			"background": true,
+			"link": true
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": true
+		},
+		"align": true,
+		"ariaLabel": true
+	},
+	"attributes": {
+		"showContent": {
+			"type": "boolean",
+			"default": false
+		},
+		"summary": {
+			"type": "string"
+		}
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		},
+		{
+			"name": "plus",
+			"label": "Plus"
+		}
+	],
+	"textdomain": "details",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
