@@ -10,8 +10,7 @@
     "start:details": "wp-scripts start --webpack-src-dir=blocks/src/details --output-path=blocks/build/details",
     "build:details": "wp-scripts build --webpack-src-dir=blocks/src/details --output-path=blocks/build/details",
     "start:details-wrapper": "wp-scripts start --webpack-src-dir=blocks/src/details-wrapper --output-path=blocks/build/details-wrapper",
-    "build:details-wrapper": "wp-scripts build --webpack-src-dir=blocks/src/details-wrapper --output-path=blocks/build/details-wrapper",
-    "release": "standard-version"
+    "build:details-wrapper": "wp-scripts build --webpack-src-dir=blocks/src/details-wrapper --output-path=blocks/build/details-wrapper"
   },
   "repository": {
     "type": "git",
