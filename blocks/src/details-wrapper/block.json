@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Details wrapper",
 	"category": "text",
-	"icon": "arrow-down-alt2",
+	"icon": "button",
 	"description": "Wrapper for the details block",
 	"supports": {
 		"html": false

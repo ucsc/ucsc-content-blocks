@@ -4,47 +4,102 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.wp-block-ucsc-details {
-  border-radius: 4px;
-  margin: .5em .5em 0;
-  padding: .5em .5em 0;
-  position:relative;
+.wp-block-ucsc-details summary { 
+  cursor: pointer;
+}
+
+.wp-block-ucsc-details summary > * {
+  display: inline;
+}
+
+details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]){
 	summary {
 		box-sizing: border-box;
-		width: 100%;
-		padding: var(--wp--preset--font-size--small);
-		padding-left: 1.5rem;
 		list-style: none;
-		cursor: pointer;
-		transition: font-weight 0.2s ease-in-out;
 		&::-webkit-details-marker {
 			display:none;
 		}
 		&::before {
-			content: "\f345";
-			position: absolute;
-			left: 0;
-			// background: transparent url(arrow.svg) no-repeat 50% 50% / 1em 1em;
 			color: currentColor;
-			width: 1.5em;
-			height: 1.5em;
-			transition: transform 0.1s linear;
 		}
-	}
-
-}
-
-.wp-block-ucsc-details[open] summary {
-	&::before {
-		content: "\f347";
 	}
 }
 
 .wp-block-ucsc-details {
 
+	&.is-style-chevron {
+		summary::before{
+			content: "\f345";
+		}
+	}
 	&.is-style-plus {
 		summary::before{
 			content: "\f543";
+		}
+	}
+	&.is-style-check {
+		summary::before{
+			content: "\f147";
+		}
+	}
+	&.has-small-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--small);
+			padding-top: 0.1625rem;
+		}
+	}
+	&.has-base-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--base);
+			padding-top: 0.1625rem;
+		}
+	}
+	&.has-one-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--one);
+			padding-top: 0.167rem;
+		}
+	}
+	&.has-two-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--two);
+			padding: 0.2rem 0.2rem 0 0.2rem;
+		}
+	}
+	&.has-three-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--three);
+			padding: 0.4rem 0.3rem 0 0.2rem;
+		}
+	}
+	&.has-four-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--four);
+			padding: 0.5rem 1rem 0 0;
+		}
+	}
+	&.has-five-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--five);
+			padding: 0.6rem 1.25rem 0 0.5rem;
+		}
+	}
+	&.has-six-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--six);
+			padding: 0.6rem 1.25rem 0 0.5rem;
+		}
+	}
+	&.has-seven-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--seven);
+			padding: 0.7rem 2rem 0 0;
+		}
+	}
+	&.has-eight-font-size {
+		summary::before{
+			font-size: var(--wp--preset--font-size--eight);
+			padding: 1.25rem 3rem 0 .5rem;
 		}
 	}
 	
@@ -52,10 +107,19 @@
 
 .wp-block-ucsc-details[open] {
 
+	&.is-style-chevron {
+		summary::before{
+			content: "\f347";
+		}
+	}
 	&.is-style-plus {
 		summary::before{
 			content: "\f460";
-			transform:none;
+		}
+	}
+	&.is-style-check {
+		summary::before{
+			content: "\f335";
 		}
 	}
 	

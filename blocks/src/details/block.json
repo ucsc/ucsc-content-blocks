@@ -5,25 +5,22 @@
 	"version": "0.1.0",
 	"title": "Details",
 	"category": "text",
-	"icon": "arrow-right-alt2",
+	"icon": "media-text",
 	"description": "Details block",
 	"supports": {
 		"html": false,
 		"typography": {
-			"fontSize": true,
-			"lineHeight": true
+			"fontSize": true
 		},
 		"color": {
 			"text": true,
-			"background": true,
-			"link": true
+			"background": true
 		},
 		"spacing": {
 			"margin": true,
 			"padding": true,
 			"blockGap": true
 		},
-		"align": true,
 		"ariaLabel": true
 	},
 	"attributes": {
@@ -42,8 +39,16 @@
 			"isDefault": true
 		},
 		{
+			"name": "chevron",
+			"label": "Chevron"
+		},
+		{
 			"name": "plus",
 			"label": "Plus/Minus"
+		},
+		{
+			"name": "check",
+			"label": "Check mark"
 		}
 	],
 	"textdomain": "details",

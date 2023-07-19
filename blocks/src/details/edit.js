@@ -11,7 +11,6 @@ import {
 
 import {
 	Panel,
-	PanelHeader,
 	PanelRow,
 	PanelBody,
 	ToggleControl
@@ -23,11 +22,12 @@ export default function Edit({
 	clientId,
 	isSelected,
 	setAttributes,
+	className
 }) {
 	const blockProps = useBlockProps({
-		className: 'details-block',
+		className: ['details-block'],
 	});
-
+	console.log(className);
 	const { summary, showContent } = attributes;
 
 	const onChangeSummary = (newSummary) => {
@@ -40,7 +40,7 @@ export default function Edit({
 		}
 	};
 
-	const clickListener = (e) => e.preventDefault();
+
 
 	const isInnerBlockSelected = useSelect(
 		(select) =>
