@@ -15,7 +15,7 @@ export default function Edit() {
 	return (
 		<>
 			<div {...blockProps}>
-				<p>Details wrapper</p>
+				<p class="wrapper-heading" >Details wrapper</p>
 				<InnerBlocks allowedBlocks={ALLOWED_BLOCKS} />
 			</div>
 		</>

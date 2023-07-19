@@ -11,7 +11,7 @@ export default function save({ attributes }) {
 
 	return (
 		<details {...blockProps}>
-			<summary>
+			<summary class="dashicons-before">
 				<RichText.Content
 					value={summary}
 				/>

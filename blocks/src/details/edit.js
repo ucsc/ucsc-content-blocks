@@ -73,7 +73,7 @@ export default function Edit({
 			</InspectorControls>
 
 			<details {...blockProps}>
-				<summary onKeyUp={keyUpListener} >
+				<summary class="dashicons-before" onKeyUp={keyUpListener} >
 					<RichText
 						value={summary}
 						onChange={onChangeSummary}

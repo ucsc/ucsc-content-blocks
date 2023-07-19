@@ -21,10 +21,11 @@
 			display:none;
 		}
 		&::before {
-			content: "";
+			content: "\f345";
 			position: absolute;
 			left: 0;
-			background: transparent url(arrow.svg) no-repeat 50% 50% / 1em 1em;
+			// background: transparent url(arrow.svg) no-repeat 50% 50% / 1em 1em;
+			color: currentColor;
 			width: 1.5em;
 			height: 1.5em;
 			transition: transform 0.1s linear;
@@ -35,7 +36,7 @@
 
 .wp-block-ucsc-details[open] summary {
 	&::before {
-		transform: rotate(90deg) scale(1.25);
+		content: "\f347";
 	}
 }
 
@@ -43,7 +44,19 @@
 
 	&.is-style-plus {
 		summary::before{
-			background: none;
+			content: "\f543";
 		}
 	}
+	
+}
+
+.wp-block-ucsc-details[open] {
+
+	&.is-style-plus {
+		summary::before{
+			content: "\f460";
+			transform:none;
+		}
+	}
+	
 }
