@@ -8,7 +8,10 @@
 	"icon": "media-text",
 	"description": "Details block",
 	"supports": {
-		"html": false,
+		"align": [
+			"wide",
+			"full"
+		],
 		"typography": {
 			"fontSize": true
 		},

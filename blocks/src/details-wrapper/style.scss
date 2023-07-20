@@ -5,4 +5,42 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+.wp-block-ucsc-details-wrapper {
+	width: 100%;
+	
+	.wrapper-spacer {
+		padding-bottom: 1rem
+	}
+	a.expand-collapse:active, a.expand-collapse:focus, a.expand-collapse:hover {
+			color: #32373c;
+		}
+	a.expand-collapse:hover {
+		background-color: var(--wp--preset--color--light-gray);
+	}
+	.expand-collapse {
+		color: #32373c;
+		background-color: var(--wp--preset--color--lightest-gray);
+		padding: 0.5rem 0.5rem 0.5rem 0;
+		margin-bottom: 1rem;
+		text-decoration: none;
+		border-radius: 5px;
+		&::before {
+				font-family: "dashicons";
+			}
+		
+	}
+	#expand.expand-collapse {
+		&::before {
+			content: "\f345";
+		}
+	}
+	#collapse.expand-collapse {
+		&::before {
+			content: "\f347";
+		}
+	}
+	
+}
+
+
 

@@ -8,7 +8,14 @@
 	"icon": "button",
 	"description": "Wrapper for the details block",
 	"supports": {
-		"html": false
+		"align": [
+			"wide",
+			"full"
+		],
+		"color": {
+			"text": false,
+			"background": true
+		}
 	},
 	"textdomain": "details-wrapper",
 	"editorScript": "file:./index.js",

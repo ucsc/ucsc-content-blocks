@@ -4,6 +4,11 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-ucsc-details {
+		box-sizing:border-box;
+		overflow:hidden
+	}
+
 .wp-block-ucsc-details summary { 
   cursor: pointer;
 }
@@ -12,9 +17,19 @@
   display: inline;
 }
 
+// Use block gap for block; falls back to browser default if not supported.
+.wp-block-ucsc-details > *:not(summary) {
+	margin-block-start: var(--wp--style--block-gap);
+	margin-block-end: 0;
+}
+
+// Remove excess margin from the last block.
+.wp-block-ucsc-details > *:last-child {
+	margin-bottom: 0;
+}
+
 details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]){
 	summary {
-		box-sizing: border-box;
 		list-style: none;
 		&::-webkit-details-marker {
 			display:none;
