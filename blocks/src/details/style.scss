@@ -31,17 +31,30 @@
 details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]){
 	summary {
 		list-style: none;
+		position:relative;
+		padding-left: 1.5rem;
 		&::-webkit-details-marker {
 			display:none;
 		}
 		&::before {
 			color: currentColor;
+			font-family: "dashicons";
+			position:absolute;
+  		top: 1.3em;
+  		left: 0.1em;
+  		margin-top: -1.3em;
+			
 		}
 	}
 }
 
 .wp-block-ucsc-details {
 
+	&.is-style-default {
+		summary::marker {
+			position:absolute
+	}
+	}
 	&.is-style-chevron {
 		summary::before{
 			content: "\f345";
@@ -58,63 +71,83 @@ details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"
 		}
 	}
 	&.has-small-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--small);
-			padding-top: 0.1625rem;
+		summary{
+			padding-left: 1rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--small);
+			}
 		}
 	}
 	&.has-base-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--base);
-			padding-top: 0.1625rem;
+		summary{
+			padding-left: 1.25rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--base);
+			}
 		}
 	}
 	&.has-one-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--one);
-			padding-top: 0.167rem;
+		summary{
+			padding-left: 1.5rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--one);
+			}
 		}
 	}
 	&.has-two-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--two);
-			padding: 0.2rem 0.2rem 0 0.2rem;
+		summary{
+			padding-left: 1.75rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--two);
+			}
 		}
 	}
 	&.has-three-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--three);
-			padding: 0.4rem 0.3rem 0 0.2rem;
+		summary{
+			padding-left: 2rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--three);
+			}
 		}
 	}
 	&.has-four-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--four);
-			padding: 0.5rem 1rem 0 0;
+		summary{
+			padding-left: 2.25rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--four);
+			}
 		}
 	}
 	&.has-five-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--five);
-			padding: 0.6rem 1.25rem 0 0.5rem;
+		summary{
+			padding-left: 2.75rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--five);
+			}
 		}
 	}
 	&.has-six-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--six);
-			padding: 0.6rem 1.25rem 0 0.5rem;
+		summary{
+			padding-left: 3.25rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--six);
+			}
 		}
 	}
 	&.has-seven-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--seven);
-			padding: 0.7rem 2rem 0 0;
+		summary{
+			padding-left: 4rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--seven);
+			}
 		}
 	}
 	&.has-eight-font-size {
-		summary::before{
-			font-size: var(--wp--preset--font-size--eight);
-			padding: 1.25rem 3rem 0 .5rem;
+		summary{
+			padding-left: 5.5rem!important;
+			&::before{
+				font-size: var(--wp--preset--font-size--eight);
+			}
 		}
 	}
 	

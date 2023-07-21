@@ -17,6 +17,14 @@
   margin-bottom: .5em;
 }
 
+details.wp-block-ucsc-details[class*="-font-size"]{
+  summary {
+    &::before {
+      margin-top: -1.05em !important;
+    }
+  }
+}
+
 
 
 

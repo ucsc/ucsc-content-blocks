@@ -1,23 +1,22 @@
 
-import { __ } from '@wordpress/i18n';
-import { useBlockProps, RichText, useInnerBlocksProps } from '@wordpress/block-editor';
+import { RichText, useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+
 
 export default function save({ attributes }) {
-	const blockProps = useBlockProps.save({
-		className: ['details-block'],
-	});
-	const innerBlocksProps = useInnerBlocksProps.save();
-	const { summary } = attributes;
-
+	const { showContent } = attributes;
+	const summary = attributes.summary ? attributes.summary : 'Details';
+	const blockProps = useBlockProps.save(
+		{
+			className: ['details-block'],
+		}
+	);
 
 	return (
-		<details {...blockProps}>
-			<summary class="dashicons-before">
-				<RichText.Content
-					value={summary}
-				/>
+		<details {...blockProps} open={showContent}>
+			<summary>
+				<RichText.Content value={summary} />
 			</summary>
-			<div {...innerBlocksProps} />
+			<InnerBlocks.Content />
 		</details>
 	);
 }
