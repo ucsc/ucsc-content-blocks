@@ -36,6 +36,7 @@ details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"
 		}
 		&::before {
 			color: currentColor;
+			font-family: "dashicons";
 		}
 	}
 }
