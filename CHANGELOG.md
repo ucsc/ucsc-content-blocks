@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.6...v0.1.7) (2023-07-21)
+
+
+### Bug Fixes
+
+* 🚨 add additional scripts, lint and format files, configure zip ([#5](https://github.com/ucsc/ucsc-content-blocks/issues/5)) ([54bcae8](https://github.com/ucsc/ucsc-content-blocks/commit/54bcae8028a01599e9a37085e7db9c551e0a4c44))
+
 ### [0.1.6](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.5...v0.1.6) (2023-07-21)
 
 ### [0.1.5](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.4...v0.1.5) (2023-07-21)
