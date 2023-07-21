@@ -8,24 +8,22 @@
   border: 1px solid #aaa;
   border: 1px solid var(--wp--preset--color--light-gray);
   border-radius: 4px;
-  margin: .5em .5em 0;
-  padding: .5em .5em 0;
+  margin: 0.5em 0.5em 0;
+  padding: 0.5em 0.5em 0;
 }
 
 .wp-block-ucsc-details[open] summary {
   border-bottom: 1px solid #aaa;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-details.wp-block-ucsc-details[class*="-font-size"]{
+details.wp-block-ucsc-details[class*="-font-size"] {
+  
   summary {
+
     &::before {
       margin-top: -1.05em !important;
     }
   }
 }
-
-
-
-
 

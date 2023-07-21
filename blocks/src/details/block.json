@@ -8,10 +8,7 @@
 	"icon": "media-text",
 	"description": "Hide and show additional content.",
 	"supports": {
-		"align": [
-			"wide",
-			"full"
-		],
+		"align": [ "wide", "full" ],
 		"typography": {
 			"fontSize": true
 		},

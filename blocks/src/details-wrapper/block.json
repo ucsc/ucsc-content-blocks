@@ -8,10 +8,7 @@
 	"icon": "button",
 	"description": "Wrapper for the details block",
 	"supports": {
-		"align": [
-			"wide",
-			"full"
-		],
+		"align": [ "wide", "full" ],
 		"color": {
 			"text": false,
 			"background": true
