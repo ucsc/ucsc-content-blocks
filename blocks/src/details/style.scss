@@ -17,17 +17,19 @@
   display: inline;
 }
 
-// Use block gap for block; falls back to browser default if not supported.
+
+/* Use block gap for block; falls back to browser default if not supported. */
 .wp-block-ucsc-details > *:not(summary) {
 	margin-block-start: var(--wp--style--block-gap);
 	margin-block-end: 0;
 }
 
-// Remove excess margin from the last block.
+/* Remove excess margin from the last block. */
 .wp-block-ucsc-details > *:last-child {
 	margin-bottom: 0;
 }
 
+/* Add Dashicons to non-default styles */
 details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]){
 	summary {
 		list-style: none;
@@ -47,7 +49,7 @@ details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"
 		}
 	}
 }
-
+/* Styles for marker and Dashicon variations */
 .wp-block-ucsc-details {
 
 	&.is-style-default {
@@ -152,7 +154,7 @@ details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"
 	}
 	
 }
-
+/* Styles for marker and Dashicon variations [open]*/
 .wp-block-ucsc-details[open] {
 
 	&.is-style-chevron {
