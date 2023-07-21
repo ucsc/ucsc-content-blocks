@@ -10,8 +10,6 @@ import {
 } from '@wordpress/block-editor';
 
 import {
-	Panel,
-	PanelRow,
 	PanelBody,
 	ToggleControl
 } from '@wordpress/components';
@@ -56,10 +54,9 @@ export default function Edit({
 
 	return (
 		<>
-			<InspectorControls key="setting">
-				<Panel header="Accordion Block">
-					<PanelBody title="Block Settings">
-						<PanelRow>
+			<InspectorControls>
+
+					<PanelBody title= { __( 'Settings' ) }>
 							<ToggleControl
 								label={__('Open by default')}
 								onChange={(showContent) =>
@@ -67,9 +64,7 @@ export default function Edit({
 								}
 								checked={showContent}
 							/>
-						</PanelRow>
 					</PanelBody>
-				</Panel>
 			</InspectorControls>
 
 			<details {...blockProps}>

@@ -6,7 +6,7 @@
 	"title": "Details",
 	"category": "text",
 	"icon": "media-text",
-	"description": "Details block",
+	"description": "Hide and show additional content.",
 	"supports": {
 		"align": [
 			"wide",
