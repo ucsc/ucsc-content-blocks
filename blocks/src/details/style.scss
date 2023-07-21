@@ -5,11 +5,12 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-ucsc-details {
-		box-sizing:border-box;
-		overflow:hidden
-	}
+		box-sizing: border-box;
+		overflow: hidden;
+}
 
-.wp-block-ucsc-details summary { 
+.wp-block-ucsc-details summary {
+
   cursor: pointer;
 }
 
@@ -30,18 +31,19 @@
 }
 
 /* Add Dashicons to non-default styles */
-details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]){
+details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]) {
+
 	summary {
 		list-style: none;
-		position:relative;
+		position: relative;
 		padding-left: 1.5rem;
 		&::-webkit-details-marker {
 			display:none;
 		}
 		&::before {
 			color: currentColor;
-			font-family: "dashicons";
-			position:absolute;
+			font-family: dashicons;
+			position: absolute;
   		top: 1.3em;
   		left: 0.1em;
   		margin-top: -1.3em;
@@ -49,13 +51,14 @@ details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"
 		}
 	}
 }
+
 /* Styles for marker and Dashicon variations */
 .wp-block-ucsc-details {
 
 	&.is-style-default {
 		summary::marker {
 			position:absolute
-	}
+		}
 	}
 	&.is-style-chevron {
 		summary::before{
