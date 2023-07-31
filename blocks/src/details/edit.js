@@ -17,7 +17,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 		className: [ 'details-block' ],
 	} );
 	const innerBlocksProps = useInnerBlocksProps( blockProps );
-	// console.log(blockProps);
+	
 	const onChangeSummary = ( newSummary ) => {
 		setAttributes( { summary: newSummary } );
 	};
@@ -60,7 +60,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 				{ ...innerBlocksProps }
 				open={ hasSelection || showContent }
 			>
-				<summary class="dashicons-before" onKeyUp={ keyUpListener }>
+				<summary className="dashicons-before" onKeyUp={ keyUpListener }>
 					<RichText
 						value={ summary }
 						onChange={ onChangeSummary }
