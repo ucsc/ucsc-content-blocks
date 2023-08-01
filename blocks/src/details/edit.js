@@ -17,7 +17,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 		className: [ 'details-block' ],
 	} );
 	const innerBlocksProps = useInnerBlocksProps( blockProps );
-	
+
 	const onChangeSummary = ( newSummary ) => {
 		setAttributes( { summary: newSummary } );
 	};
