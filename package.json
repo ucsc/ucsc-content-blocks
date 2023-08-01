@@ -9,24 +9,24 @@
 		"blocks",
 		"details"
 	],
-	"bugs": {
-		"url": "https://github.com/ucsc/ucsc-content-blocks/issues"
-	},
-	"main": "blocks/build/index.js",
 	"homepage": "https://github.com/ucsc/ucsc-content-blocks#readme",
 	"repository": {
 		"type": "git",
 		"url": "git+ssh://git@github.com/ucsc/ucsc-content-blocks.git"
 	},
-	"devDependencies": {
-		"@wordpress/scripts": "^26.9.0",
-		"standard-version": "^9.5.0"
+	"bugs": {
+		"url": "https://github.com/ucsc/ucsc-content-blocks/issues"
 	},
 	"files": [
 		"ucsc-content-blocks.php",
 		"blocks/build",
 		"js"
 	],
+	"main": "blocks/build/index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^26.9.0",
+		"standard-version": "^9.5.0"
+	},
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
 		"build": "wp-scripts build --webpack-src-dir=blocks/src/ --output-path=blocks/build/",
