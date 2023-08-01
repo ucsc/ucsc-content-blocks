@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.7...v0.1.8) (2023-08-01)
+
+
+### Bug Fixes
+
+* :lipstick: Fixed block spacing on Details blocks within the wrapper ([#7](https://github.com/ucsc/ucsc-content-blocks/issues/7)) ([90fbd37](https://github.com/ucsc/ucsc-content-blocks/commit/90fbd37a0bd81a602688e6d3a8b2d94ced39222d))
+* 💄 Refactor front-end and editor styles ([#6](https://github.com/ucsc/ucsc-content-blocks/issues/6)) ([ac7faf8](https://github.com/ucsc/ucsc-content-blocks/commit/ac7faf805425779573dded31ec68c2092c38671f))
+
 ### [0.1.7](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.6...v0.1.7) (2023-07-21)
 
 
