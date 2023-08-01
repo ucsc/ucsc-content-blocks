@@ -5,7 +5,7 @@
  * Description:       Content blocks for UCSC WordPress Websites.
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.8
+ * Version:           0.1.9
  * Author:            UC Santa Cruz
  * Author URI:        https://github.com/ucsc
  * License:           GPL-2.0-or-later
