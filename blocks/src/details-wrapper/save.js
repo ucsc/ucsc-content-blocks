@@ -9,7 +9,6 @@ export default function save() {
 			<a class="expand-collapse" id="expand" href="#/">
 				Expand All
 			</a>
-			<div class="wrapper-spacer"></div>
 			<div { ...innerBlocksProps } />
 		</div>
 	);
