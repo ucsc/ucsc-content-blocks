@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.8...v0.1.9) (2023-08-01)
+
+
+### Bug Fixes
+
+* 🔧 Lint  ([#8](https://github.com/ucsc/ucsc-content-blocks/issues/8)) ([7366714](https://github.com/ucsc/ucsc-content-blocks/commit/73667146d8e84c1c9e812494efd8a8bf09d4af64))
+
 ### [0.1.8](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.7...v0.1.8) (2023-08-01)
 
 
