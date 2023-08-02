@@ -50,13 +50,13 @@ There are `build` and `start` scripts for individual blocks and for various addi
 
 The `@wordpress/scripts` package includes a script called `create-block` that allows you to initiate a new block for development.
 
-From within the `blocks/scr/` directory, issue the command
+From within the `blocks/src/` directory, issue the command
 
 `npx @wordpress/create-block --no-plugin`
 
 and follow the prompts to name and namespace your new block.
 
-You will see a new directory in `blocks/src/` that contains your files.
+You will see a new directory in `blocks/src/` that contains your new block's files.
 
 The script will create a functioning "Hello World" block that you can enqueue via this plugin and review in your development environment prior to digging into the code.
 
@@ -84,7 +84,7 @@ function ucsc_register_content_blocks() {
 
 ```
 
-Enqueue the newly created block by adding a line to the `$blocks` array with the name of the directory that was created during block the `block-creation` script:
+Enqueue the newly created block by adding a line to the `$blocks` array with the name of the directory that was created with the `block-creation` script:
 
 ```php
 
@@ -98,7 +98,7 @@ Enqueue the newly created block by adding a line to the `$blocks` array with the
 
 Activate this plugin in your development environment. If the new block was enqueued propperly, you'll be able to chose the newly created "Hello World" block in the block editor of a WordPress Page or Post.
 
-Once you've verified it was built and enqueued properly, you may develop the new block.
+Once you've verified it was built and enqueued properly, configure the `build` and `start` scripts for your new block.
 
 ### Add build and start scripts for new block
 
