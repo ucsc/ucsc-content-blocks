@@ -3,8 +3,7 @@ import { __ } from '@wordpress/i18n';
 import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 
 import './editor.scss';
-export default function Edit({attributes, setAttributes}) {
-	const { wrapperButton } = attributes;
+export default function Edit() {
 	const blockProps = useBlockProps( {
 		className: 'details-wrapper',
 	} );
