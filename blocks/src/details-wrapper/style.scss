@@ -18,13 +18,23 @@
 		background-color: var(--wp--preset--color--light-gray);
 	}
 
-	.expand-collapse {
-		color: #32373c;
-		background-color: var(--wp--preset--color--lightest-gray);
-		padding: 0.5rem 0.5rem 0.5rem 0;
-		margin-bottom: 1rem;
-		text-decoration: none;
-		border-radius: 5px;
+	&.has-background {
+		.expand-wrap {
+			padding:0.5rem;
+		}
+	}
+
+	.expand-wrap {
+		display:flex;
+		align-items:center;
+		justify-items:left;
+		padding:0.5rem 0;
+		.expand-collapse {
+			color: #32373c;
+			background-color: var(--wp--preset--color--lightest-gray);
+			padding: 0.5rem 0.5rem 0.5rem 0;
+			text-decoration: none;
+			border-radius: 5px;
 
 		&::before {
 			font-family: dashicons, sans-serif;
@@ -43,6 +53,7 @@
 		&::before {
 			content: "\f347";
 		}
+	}
 	}
 
 	.details-block {
