@@ -23,7 +23,7 @@ if ( expandCollapses )
 		} );
 	} );
 
-const details = document.querySelectorAll( '.accordion-wrapper details' );
+const details = document.querySelectorAll( 'details' );
 if ( details )
 	details.forEach( ( detail ) => {
 		detail.addEventListener( 'toggle', ( e ) => {
