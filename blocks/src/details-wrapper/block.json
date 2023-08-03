@@ -7,6 +7,12 @@
 	"category": "text",
 	"icon": "button",
 	"description": "Wrapper for the details block",
+	"attributes": {
+		"wrapperButton": {
+			"type": "string",
+			"default": "Expand All"
+		}
+	},
 	"supports": {
 		"align": [ "wide", "full" ],
 		"color": {

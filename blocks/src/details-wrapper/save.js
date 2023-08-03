@@ -7,7 +7,7 @@ export default function save() {
 	return (
 		<div { ...blockProps }>
 			<div class="expand-wrap"><a class="expand-collapse" id="expand" href="#/">
-				{__('Eat All', 'details-wrapper')}
+				{__('Expand All', 'details-wrapper')}
 			</a></div>
 			<div { ...innerBlocksProps } />
 		</div>
