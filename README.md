@@ -4,12 +4,21 @@ A collection of WordPress blocks for UC Santa Cruz. Built with [@wordpress/scrip
 
 ## Current Blocks
 
-- **Details** -- A block that can be used as an accordion
-- **Details Wrapper** -- a block that contains the Details block and enables them to be opened and closed simultaneously
+- **Details** -- a block that utilizes the `<details>` element that can be used as an accordion
+- **Details Wrapper** -- a block that wraps multiple Details blocks, enabling them to be opened and closed simultaneously
+
+## Requirements
+
+Cloning and installing this plugin requires:
+
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [GitHub Cli](https://cli.github.com/manual/installation) (optional but helpful)
+- [Node.js/npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Composer](https://getcomposer.org/)
+
+Block development will require a local WordPress development environment such as [@wordpress/env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).
 
 ## Clone and install
-
-Requires [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [node/npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [composer](https://getcomposer.org/). [GitHub Cli](https://cli.github.com/manual/installation) is also helpful.
 
 - Clone repo: `gh repo clone ucsc/ucsc-content-blocks`
 - `cd ucsc-content-blocks/`
@@ -60,7 +69,7 @@ You will see a new directory in `blocks/src/` that contains your new block's fil
 
 The script will create a functioning "Hello World" block that you can enqueue via this plugin and review in your development environment prior to digging into the code.
 
-The `--no-plugin` flag will restrict creation to block scaffolding only.
+The `--no-plugin` flag will restrict creation to block scaffolding only, which is helpful when developing a plugin that has multiple blocks.
 
 For more information, see the [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) documentation in the WordPress [Block Editor Handbook](https://developer.wordpress.org/block-editor/).
 
@@ -102,7 +111,7 @@ Once you've verified it was built and enqueued properly, configure the `build` a
 
 ### Add build and start scripts for new block
 
-As described above, the `npm build` and `npm start` commands will build and start the entire plugin. When developing a new plugin, it's convenient to _build_ and _start_ just the plugin you're working on.
+As described above, the `npm build` and `npm start` commands will build and start the entire plugin. When developing a new block, it's convenient to _build_ and _start_ just the block you're working on.
 
 You can add `build` and `start` scripts for your new block by editing the `"scripts"` object in the `package.json` file.
 
@@ -151,6 +160,7 @@ Go develop your new block.
 - [Create a Block Tutorial](https://developer.wordpress.org/block-editor/getting-started/create-block/)
 - [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
 - [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/)
+- [@wordpress/env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/)
 
 ## Contributors
 
