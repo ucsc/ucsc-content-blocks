@@ -6,9 +6,11 @@ export default function save() {
 	const innerBlocksProps = useInnerBlocksProps.save();
 	return (
 		<div { ...blockProps }>
-			<div class="expand-wrap"><a class="expand-collapse" id="expand" href="#/">
-				{__('Expand All', 'details-wrapper')}
-			</a></div>
+			<div class="expand-wrap">
+				<a class="expand-collapse" id="expand" href="#/">
+					{ __( 'Expand All', 'details-wrapper' ) }
+				</a>
+			</div>
 			<div { ...innerBlocksProps } />
 		</div>
 	);

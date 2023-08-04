@@ -7,10 +7,7 @@
 	"category": "text",
 	"icon": "button",
 	"description": "Wrapper for the details block",
-		"keywords": [
-			"accordion",
-			"faq"
-		],
+	"keywords": [ "accordion", "faq" ],
 	"attributes": {
 		"wrapperButton": {
 			"type": "string",
