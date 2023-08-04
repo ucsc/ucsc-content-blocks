@@ -16,9 +16,7 @@ export default function Edit() {
 				<p class="wrapper-heading">Details wrapper</p>
 
 				<div {...innerBlocksProps}>
-					<div class="expand-wrap"><a class="expand-collapse" id="expand" href="#/">
-						{__('Expand All', 'details-wrapper')}
-					</a></div>
+
 					{ children }
 				</div>
 
