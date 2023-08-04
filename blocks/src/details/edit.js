@@ -8,7 +8,6 @@ import {
 import { useSelect } from '@wordpress/data';
 import { PanelBody, ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import { SPACE } from '@wordpress/keycodes';
 import './editor.scss';
 
 export default function Edit( { attributes, setAttributes, clientId } ) {
@@ -21,10 +20,9 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 	const onChangeSummary = ( newSummary ) => {
 		setAttributes( { summary: newSummary } );
 	};
-	const keyUpListener = ( e ) => {
-		if ( e.keyCode === SPACE ) {
-			e.preventDefault();
-		}
+
+	const clickListener = (e) => {
+		e.preventDefault();
 	};
 	// Check if either the block or the inner blocks are selected.
 	const hasSelection = useSelect(
@@ -60,7 +58,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 				{ ...innerBlocksProps }
 				open={ hasSelection || showContent }
 			>
-				<summary className="dashicons-before" onKeyUp={ keyUpListener }>
+				<summary className="dashicons-before" onClick={ clickListener }>
 					<RichText
 						value={ summary }
 						onChange={ onChangeSummary }
