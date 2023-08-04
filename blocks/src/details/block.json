@@ -7,10 +7,10 @@
 	"category": "text",
 	"icon": "media-text",
 	"description": "Hide and show additional content.",
-		"keywords": [
-			"accordion",
-			"faq"
-		],
+	"keywords": [
+		"accordion",
+		"faq"
+	],
 	"supports": {
 		"align": [ "wide", "full" ],
 		"typography": {
