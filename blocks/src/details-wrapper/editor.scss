@@ -7,7 +7,6 @@
 .wp-block-ucsc-details-wrapper {
 	border: 1px solid #aaa;
 	border: 1px solid var(--wp--preset--color--light-gray);
-	border-radius: 4px;
 
 	.wrapper-heading {
 		color: #aaa;
@@ -15,5 +14,9 @@
 		font-size: 20px;
 		font-size: var(--wp--preset--font-size--medium);
 		margin-top: 0;
+	}
+
+	.wp-block-details {
+		border:none
 	}
 }
