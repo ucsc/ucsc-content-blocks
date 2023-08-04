@@ -32,12 +32,16 @@
 		.expand-collapse {
 			color: #32373c;
 			background-color: var(--wp--preset--color--lightest-gray);
-			padding: 0.5rem 0.5rem 0.5rem 0;
+			padding: 0.5rem 0.5rem 0.5rem 1.25rem;
 			text-decoration: none;
-			border-radius: 5px;
+			position:relative;
 
 		&::before {
-			font-family: dashicons, sans-serif;
+    	font-family: dashicons, sans-serif;
+    	position: absolute;
+    	top: 1.7em;
+    	left: 0.1em;
+    	margin-top: -1.3em;
 		}
 	}
 
