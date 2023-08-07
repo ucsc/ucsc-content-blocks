@@ -64,7 +64,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 					<RichText
 						value={ summary }
 						onChange={ onChangeSummary }
-						allowedFormats={['core/bold', 'core/italic']} // Allow the content to be made bold or italic, but do not allow othe formatting options
+						allowedFormats={['core/bold', 'core/italic']}
 						placeholder={ __(
 							'Enter the summary text...',
 							'details'
