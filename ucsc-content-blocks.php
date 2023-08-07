@@ -20,12 +20,16 @@
  * Enqueue theme scripts and styles.
  */
 function ucsc_content_block_scripts() {
-
-	wp_register_script( 'details-wrapper', plugin_dir_url( __FILE__ ) . 'js/detailswrapper.js', array(), wp_get_theme()->get( 'Version' ), true );
-	wp_enqueue_script( 'details-wrapper' );
+	wp_enqueue_script(
+		'details-wrapper',
+		plugins_url ('/js/detailswrapper.js', __FILE__),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
 
 }
-add_action( 'wp_enqueue_scripts', 'ucsc_content_block_scripts' );
+add_action( 'enqueue_block_editor_assets', 'ucsc_content_block_scripts' );
 
 /**
  * Register blocks
