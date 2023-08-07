@@ -29,7 +29,7 @@ function ucsc_content_block_scripts() {
 	);
 
 }
-add_action( 'enqueue_block_editor_assets', 'ucsc_content_block_scripts' );
+add_action( 'wp_enqueue_scripts', 'ucsc_content_block_scripts' );
 
 /**
  * Register blocks
