@@ -13,7 +13,10 @@
 	}
 
 	&.is-style-default {
-	padding-left: 0.5rem;
+
+		summary {
+			padding-left: 0.5rem;
+		}
 	}
 
 	&.is-style-chevron {
