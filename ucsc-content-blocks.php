@@ -20,7 +20,7 @@
  * Enqueue theme scripts and styles.
  */
 function ucsc_content_block_scripts() {
-
+	wp_enqueue_style('dashicons');
 	wp_register_script( 'details-wrapper', plugin_dir_url( __FILE__ ) . 'js/detailswrapper.js', array(), wp_get_theme()->get( 'Version' ), true );
 	wp_enqueue_script( 'details-wrapper' );
 
