@@ -23,14 +23,6 @@ function ucsc_content_block_scripts() {
 	wp_enqueue_style(
 		'dashicons'
 	);
-	wp_enqueue_script(
-		'details-wrapper',
-		plugins_url ('/js/detailswrapper.js', __FILE__),
-		array(),
-		wp_get_theme()->get( 'Version' ),
-		true
-	);
-
 }
 add_action( 'wp_enqueue_scripts', 'ucsc_content_block_scripts' );
 
