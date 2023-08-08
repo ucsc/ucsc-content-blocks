@@ -35,6 +35,21 @@ function ucsc_content_block_scripts() {
 add_action( 'wp_enqueue_scripts', 'ucsc_content_block_scripts' );
 
 /**
+ * Enqueue additional block assets.
+ */
+function ucsc_content_block_assets() {
+	wp_enqueue_script(
+		'details-wrapper',
+		plugins_url ('/js/detailswrapper.js', __FILE__),
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
+
+}
+add_action( 'enqueue_block_assets', 'ucsc_content_block_assets' );
+
+/**
  * Register blocks
  */
 function ucsc_register_content_blocks() {
