@@ -9,7 +9,7 @@ export default function Edit() {
 	} );
 	const ALLOWED_BLOCKS = [ 'ucsc/details' ];
 	const { children, ...innerBlocksProps } = useInnerBlocksProps( blockProps, {
-		ALLOWED_BLOCKS,
+		allowedBlocks: ALLOWED_BLOCKS,
 	} );
 
 	return (
