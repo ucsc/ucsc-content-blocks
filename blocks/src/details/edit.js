@@ -12,11 +12,14 @@ import { SPACE } from '@wordpress/keycodes';
 import './editor.scss';
 
 export default function Edit( { attributes, setAttributes, clientId } ) {
+	const ALLOWED_BLOCKS = [ 'core/paragraph' ];
 	const { summary, showContent } = attributes;
 	const blockProps = useBlockProps( {
 		className: [ 'details-block' ],
 	} );
-	const innerBlocksProps = useInnerBlocksProps( blockProps );
+	const innerBlocksProps = useInnerBlocksProps(blockProps, {
+		allowedBlocks: ALLOWED_BLOCKS
+	} );
 
 	const onChangeSummary = ( newSummary ) => {
 		setAttributes( { summary: newSummary } );
