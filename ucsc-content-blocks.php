@@ -23,6 +23,13 @@ function ucsc_content_block_scripts() {
 	wp_enqueue_style(
 		'dashicons'
 	);
+	wp_register_script(
+		'details-wrapper',
+		plugin_dir_url( __FILE__ ) . 'blocks/src/details-wrapper/view.js',
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		true
+	);
 }
 add_action( 'wp_enqueue_scripts', 'ucsc_content_block_scripts' );
 
@@ -39,7 +46,7 @@ function ucsc_content_block_assets() {
 	);
 
 }
-add_action( 'enqueue_block_assets', 'ucsc_content_block_assets' );
+// add_action( 'enqueue_block_assets', 'ucsc_content_block_assets' );
 
 /**
  * Register blocks
