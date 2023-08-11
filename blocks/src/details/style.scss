@@ -21,21 +21,21 @@
 
 	&.is-style-chevron {
 
-		summary::marker {
+		summary::before {
 			content: "\f345";
 		}
 	}
 
 	&.is-style-plus {
 
-		summary::marker {
+		summary::before {
 			content: "\f543";
 		}
 	}
 
 	&.is-style-check {
 
-		summary::marker {
+		summary::before {
 			content: "\f147";
 		}
 	}
@@ -61,21 +61,21 @@
 
 	&.is-style-chevron {
 
-		summary::marker {
+		summary::before {
 			content: "\f347";
 		}
 	}
 
 	&.is-style-plus {
 
-		summary::marker {
+		summary::before {
 			content: "\f460";
 		}
 	}
 
 	&.is-style-check {
 
-		summary::marker {
+		summary::before {
 			content: "\f335";
 		}
 	}
@@ -86,9 +86,22 @@
 details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"]) {
 
 	summary {
+		list-style: none;
+		position: relative;
+		padding-left: 1.25rem;
 
-		&::marker {
+		&::-webkit-details-marker {
+			display:none;
+		}
+
+		&::before {
+			color: currentColor;
 			font-family: dashicons, sans-serif;
+			position: absolute;
+			top: 1.3em;
+			left: 0.1em;
+			margin-top: -1.3em;
+
 		}
 	}
 }
@@ -97,6 +110,80 @@ details.wp-block-ucsc-details[class*="is-style-"]:not([class*="is-style-default"
 /* Styles for Dashicon variations */
 details.wp-block-ucsc-details:not([class*="is-style-default"]) {
 
+
+	&.has-small-font-size {
+
+		summary {
+			padding-left: 1rem !important;
+
+		}
+	}
+
+	&.has-base-font-size {
+
+		summary {
+			padding-left: 1.25rem !important;
+
+		}
+	}
+
+	&.has-one-font-size {
+
+		summary {
+			padding-left: 1.5rem !important;
+
+		}
+	}
+
+	&.has-two-font-size {
+
+		summary {
+			padding-left: 1.75rem !important;
+
+		}
+	}
+
+	&.has-three-font-size {
+
+		summary {
+			padding-left: 2rem !important;
+		}
+	}
+
+	&.has-four-font-size {
+
+		summary {
+			padding-left: 2.25rem !important;
+		}
+	}
+
+	&.has-five-font-size {
+
+		summary {
+			padding-left: 2.75rem !important;
+		}
+	}
+
+	&.has-six-font-size {
+
+		summary {
+			padding-left: 3.25rem !important;
+		}
+	}
+
+	&.has-seven-font-size {
+
+		summary {
+			padding-left: 4rem !important;
+		}
+	}
+
+	&.has-eight-font-size {
+
+		summary {
+			padding-left: 5.5rem !important;
+		}
+	}
 
 }
 
