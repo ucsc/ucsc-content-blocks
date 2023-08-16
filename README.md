@@ -1,6 +1,6 @@
 # UC Santa Cruz Content Blocks
 
-A collection of WordPress blocks for UC Santa Cruz. Built with [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/). Additional blocks will be added as use cases arise.
+A collection of WordPress blocks for [UC Santa Cruz](https://www.ucsc.edu/). Built with [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/). Additional blocks will be added as use cases arise.
 
 ## Current Blocks
 
@@ -54,6 +54,8 @@ The following npm scripts will build (or start) the entire plugin.
 There are `build` and `start` scripts for individual blocks and for various additional tasks such as linting and packaging. Please review the `"scripts"` object in `package.json`. All additional scripts are provided by the `@wordpress/scripts` package.
 
 ## Creating a new block
+
+If you'd like to contribute to this project and create a new block, please review our [contributing guidelines](CONTRIBURING.md).
 
 ### Scaffold files
 
