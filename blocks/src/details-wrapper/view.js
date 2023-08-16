@@ -22,4 +22,4 @@ if (expandCollapses)
 				});
 		});
 	});
-console.log('Hello World');
+console.log('Hello Slug!');
