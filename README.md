@@ -55,7 +55,7 @@ There are `build` and `start` scripts for individual blocks and for various addi
 
 ## Creating a new block
 
-If you'd like to contribute to this project and create a new block, please review our [contributing guidelines](CONTRIBURING.md).
+If you'd like to contribute to this project and create a new block, please review our [contributing guidelines](CONTRIBUTING.md).
 
 ### Scaffold files
 
