@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10-beta.0](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.9...v0.1.10-beta.0) (2023-08-21)
+
+
+### Bug Fixes
+
+* :bug: 29-details-wrapper-const-allowed_blocks-not-restricting-wrapper-blocks ([#32](https://github.com/ucsc/ucsc-content-blocks/issues/32)) ([f91fb93](https://github.com/ucsc/ucsc-content-blocks/commit/f91fb935ed0fcc19f1bbed05cf739938e2e443f0))
+* :bug: Details: add clickListener to Summary field  ([#17](https://github.com/ucsc/ucsc-content-blocks/issues/17)) ([e466a30](https://github.com/ucsc/ucsc-content-blocks/commit/e466a303b3cec3d40641b101d734f57f5a7b8bfc)), closes [#9](https://github.com/ucsc/ucsc-content-blocks/issues/9)
+* :bug: Enqueue `dashicons` in `ucsc-content-blocks.php` Fixes [#27](https://github.com/ucsc/ucsc-content-blocks/issues/27) ([#28](https://github.com/ucsc/ucsc-content-blocks/issues/28)) ([256a862](https://github.com/ucsc/ucsc-content-blocks/commit/256a86263688e960a6b52ec5864a391f3b3a27cd))
+* :bug: remove `ancestors` entry from `block.json` in Details ([#33](https://github.com/ucsc/ucsc-content-blocks/issues/33)) ([a4097bc](https://github.com/ucsc/ucsc-content-blocks/commit/a4097bc29393beae9f395c919d3cd8459db06ef6))
+* :bug: Remove ability to make a link in the summary of the details element ([#25](https://github.com/ucsc/ucsc-content-blocks/issues/25)) ([faed683](https://github.com/ucsc/ucsc-content-blocks/commit/faed683331715485123f661e4a867381427aef68))
+* :bug: Set `margin-block-start: 0;` on details block children. Fixes [#12](https://github.com/ucsc/ucsc-content-blocks/issues/12) ([#13](https://github.com/ucsc/ucsc-content-blocks/issues/13)) ([b6e0c8d](https://github.com/ucsc/ucsc-content-blocks/commit/b6e0c8d4163c0051310dff6142a04be24fb00626))
+* :lipstick: Fix misplaced style rule. ([#26](https://github.com/ucsc/ucsc-content-blocks/issues/26)) ([6a32cb6](https://github.com/ucsc/ucsc-content-blocks/commit/6a32cb6bd5c07f80390321920645824f311e4c5e))
+* :lipstick: Revert Pseudo-classes in `<summary>` ([#36](https://github.com/ucsc/ucsc-content-blocks/issues/36)) ([8be3177](https://github.com/ucsc/ucsc-content-blocks/commit/8be317722cc7e747d9f772fcd6e25f3bab373772))
+
 ### [0.1.9](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.8...v0.1.9) (2023-08-01)
 
 
