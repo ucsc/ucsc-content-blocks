@@ -22,4 +22,3 @@ if ( expandCollapses )
 				} );
 		} );
 	} );
-console.log( 'Hello World' );
