@@ -48,8 +48,7 @@ function ucsc_register_content_blocks() {
 
 	// Register blocks in the format $dir => $render_callback.
 	$blocks = array(
-		'details'  => '', // Static block. Doesn't need a callback
-		'details-wrapper'  => '',
+		'details-wrapper'  => '', // Static block. Doesn't need a callback
 	);
 
 	foreach ( $blocks as $dir => $render_callback ) {

@@ -7,7 +7,7 @@ export default function Edit() {
 	const blockProps = useBlockProps( {
 		className: 'details-wrapper',
 	} );
-	const ALLOWED_BLOCKS = [ 'ucsc/details' ];
+	const ALLOWED_BLOCKS = [ 'core/details' ];
 	const { children, ...innerBlocksProps } = useInnerBlocksProps( blockProps, {
 		allowedBlocks: ALLOWED_BLOCKS,
 	} );
