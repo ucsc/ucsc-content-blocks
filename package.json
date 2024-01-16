@@ -1,6 +1,6 @@
 {
 	"name": "ucsc-content-blocks",
-	"version": "0.1.10-beta.0",
+	"version": "0.1.10",
 	"description": "Content blocks for UC Santa Cruz",
 	"author": "UCSC",
 	"license": "GPL-2.0-or-later",

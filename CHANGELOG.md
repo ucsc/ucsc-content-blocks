@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.10-beta.0...v0.1.10) (2024-01-16)
+
 ### [0.1.10-beta.0](https://github.com/ucsc/ucsc-content-blocks/compare/v0.1.9...v0.1.10-beta.0) (2023-08-21)
 
 
