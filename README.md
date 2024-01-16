@@ -2,6 +2,9 @@
 
 A collection of WordPress blocks for [UC Santa Cruz](https://www.ucsc.edu/). Built with [@wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/). Additional blocks will be added as use cases arise.
 
+![GitHub Release](https://img.shields.io/github/v/release/ucsc/ucsc-content-blocks?logo=github&logoColor=%23fdc700&labelColor=%23003c6c&color=%23fdc700)
+ ![GitHub issues](https://img.shields.io/github/issues/ucsc/ucsc-content-blocks?logo=github&logoColor=%23fdc700&labelColor=%23003c6c&color=%23fdc700) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ucsc/ucsc-content-blocks/release.yml?logo=github&logoColor=%23fdc700&labelColor=%23003c6c&color=%23fdc700)
+
 ## Current Blocks
 
 - **Details** -- a block that utilizes the `<details>` element that can be used as an accordion
